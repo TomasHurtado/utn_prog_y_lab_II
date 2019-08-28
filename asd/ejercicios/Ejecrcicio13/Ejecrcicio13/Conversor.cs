@@ -11,10 +11,10 @@ namespace Ejecrcicio13
     public static string bin;
     public static double num;
 
-    string DecimalBinario(double num)
+    public string DecimalBinario(double num)
     {
       string bin;
-      bin = Convert
+      bin = Convert.ToString(Convert.ToByte(num), 2);
 
 
       return bin;
@@ -23,7 +23,7 @@ namespace Ejecrcicio13
    public double BinarioDecimal(string bin)
     {
       double num;
-      num = Convert.ToInt32(bin,2);
+      num = Convert.ToInt64(bin,2);
 
       return num;
     }

@@ -12,15 +12,21 @@ namespace Ejecrcicio13
     {
       string hola;
       double num;
+      double dec;
+      string deci;
       Conversor conversor = new Conversor();
 
       Console.Write("ingrese binario");
       hola = Console.ReadLine();
       num = conversor.BinarioDecimal(hola);
+      Console.Write("el numero es: " + num + " \n");
 
 
-
-      Console.Write("el numero es: " + num);
+      Console.Write("ingrese decimal ");
+      hola = Console.ReadLine();
+      dec = int.Parse(hola);
+      deci = conversor.DecimalBinario(dec);
+      Console.Write("el numero es: " + deci +" \n");
       Console.ReadKey();
     }
   }
