@@ -31,11 +31,7 @@ namespace Ejercicio31
         }
 
 
-        public static bool operator +(Negocio n, Cliente c)
-        {
-            return true;
-        }
-
+       
 
 
 
